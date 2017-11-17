@@ -1,0 +1,33 @@
+{
+  "name": "template-app",
+  "version": "0.0.1",
+  "description": "A default template for creating small web applications.",
+  "main": "index.js",
+  "repository": "https://github.com/adderpositive/template-app",
+  "author": "Martin Homola",
+  "license": "GPL-3.0+",
+  "private": false,
+  "browserslist": "last 2 versions, ie 10",
+  "scripts": {
+    "build": "webpack --config webpack.config.js",
+    "start:dev": "webpack-dev-server"
+  },
+  "dependencies": {
+    "babel-core": "^6.8.0",
+    "babel-eslint": "^6.0.4",
+    "babel-loader": "7.1.1",
+    "babel-plugin-transform-runtime": "^6.8.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.5.0",
+    "eslint": "^2.9.0",
+    "eslint-plugin-react": "^5.1.1",
+    "react": "^15.0.2",
+    "react-dom": "^15.0.2",
+    "webpack": "^1.12.14"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.0.0-beta.32",
+    "webpack-dev-server": "^2.9.4"
+  }
+}
