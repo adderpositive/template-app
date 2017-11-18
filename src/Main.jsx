@@ -1,10 +1,9 @@
-import { React } from 'react';
+import React from 'react';
 
 const Main = () => {
-  
-  return (
-    <div>
-      {'Ahoj světe'}
+  return(
+  	<div>
+      Ahoj světe
     </div>
   );
 };

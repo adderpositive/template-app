@@ -1,10 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-//import Main from './Main';
+import Main from './Main';
 
+const mountNode = document.getElementById('app');
 
 ReactDOM.render(
-  <div>AHOJ</div>,
-  document.getElementById('app')
+  <Main />,
+  mountNode
 );
