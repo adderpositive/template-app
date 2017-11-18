@@ -1,23 +1,25 @@
 const path = require('path');
-var webpack = require('webpack');
 
-module.exports = {
+const config = {
   entry: './src/app.js',
   output: {
     filename: 'script.js',
     path: path.resolve(__dirname, 'public')
   },
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.js$/,
-        exclude: /node_modules/,
-        loader: 'babel'
+        exclude: /(node_modules|bower_components)/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-env']
+          }
+        }
       }
-    ],
-    stats: {
-      colors: true
-    },
-    devtool: 'source-map'
+    ]
   }
 };
+
+module.exports = config;

@@ -1,4 +1,4 @@
-/node_modules
 yarn-error.log
-/_materials
-/public/script.js
+node_modules
+_materials
+public/script.js
