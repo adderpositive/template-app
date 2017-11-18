@@ -1,3 +1,12 @@
 import { React } from 'react';
-import { ReactDOM } from 'react-dom';
 
+const Main = () => {
+  
+  return (
+    <div>
+      {'Ahoj světe'}
+    </div>
+  );
+};
+
+export default Main;
