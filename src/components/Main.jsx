@@ -7,21 +7,21 @@ const cnt = () => ({
   color: '#ff0'
 });
 
-const states = (state, props) => ({
-	items: state.items
+const states = (state) => ({
+  items: state.items
 });
 
 // const dispatches = () => ({});
 
 const styles = () => ({
- cnt
+  cnt
 });
 
 const Main = (props) => {
   return(
     <ul className={props.styles.cnt}>
       {props.items.map((item) => (
-        <Item id={item.id} item={item.text} />
+        <Item key={item.id} item={item.text} />
       ))}
     </ul>
   );

@@ -5,10 +5,12 @@ import Router from './router';
 import renderer from './renderer';
 import store from './store';
 
-export default () => (
+const setup = () => (
   <ReduxProvider store={store}>
     <FelaProvider renderer={renderer}>
       <Router />
     </FelaProvider>
   </ReduxProvider>    
 );
+
+export default setup;

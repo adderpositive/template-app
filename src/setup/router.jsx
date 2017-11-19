@@ -4,7 +4,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 // pages
 import Main from '../components/Main';
 
-export default () => (
+const router = () => (
   <BrowserRouter>
     <Switch>
       <Route exact path="/" component={Main} />
@@ -12,3 +12,5 @@ export default () => (
     </Switch>
   </BrowserRouter>
 );
+
+export default router;
