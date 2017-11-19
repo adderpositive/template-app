@@ -2,5 +2,5 @@
 A default template for creating small web applications.
 
 ## TODO
-- set production webpack
+- add ESLint
 - add API - slim framework

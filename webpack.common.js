@@ -23,13 +23,6 @@ const config = {
       }
     ]
   },
-  devServer: {
-    contentBase: path.join(__dirname, "public"),
-    compress: true,
-    port: 9000,
-    index: 'index.html',
-    historyApiFallback: true
-  }
 };
 
 module.exports = config;
