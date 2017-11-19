@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 const Item = ({ id, item }) => (
   <li key={id}>
-    {item}
+    {item} {id}
   </li>
 );
 
