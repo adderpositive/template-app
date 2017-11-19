@@ -1,5 +1,3 @@
-// import { combineReducers } from 'redux';
-
 const modify = (state = [], action) => {
   switch (action.type) {
     case 'ITEM/ADD':

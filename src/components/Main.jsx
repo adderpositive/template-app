@@ -1,5 +1,5 @@
 import React from 'react';
-import Item from './Item';
+import Item from './pages/Item';
 import { connect as reduxConnect } from 'react-redux';
 import { connect as felaConnect } from 'react-fela';
 
