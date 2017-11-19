@@ -2,9 +2,7 @@
 A default template for creating small web applications.
 
 ## TODO
-- add react router
-- add API
-- make file structure
-
+- make file structure - separate fela renderer, redux store to independent files
 - set production webpack
-- separate fela renderer, redux store to independent files
+- add API - slim framework
+

@@ -1,12 +1,12 @@
 {
   "presets": [
   	["@babel/preset-env", { 
-      "targets": { 
+      "targets": {
         "browsers": ["last 2 versions"] 
       }, 
       "debug": true
     }],
-    "@babel/preset-react",
+    "@babel/preset-react"
   ],
   "plugins": ["@babel/plugin-proposal-object-rest-spread"]
 }
