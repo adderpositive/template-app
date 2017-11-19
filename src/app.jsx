@@ -6,6 +6,7 @@ import { createRenderer } from 'fela';
 import { Provider as FelaProvider } from 'react-fela';
 import reducer from './reducer';
 import initialState from './initialState';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 import Main from './Main';
 
@@ -16,7 +17,12 @@ const mountNode = document.getElementById('app');
 ReactDOM.render(
   <ReduxProvider store={store}>
     <FelaProvider renderer={renderer}>
-      <Main />
+      <Router>
+        <div>
+          <Route exact path="/" component={Main} />
+          <Route path="/test" component={Main} />
+        </div>
+      </Router>
     </FelaProvider>
   </ReduxProvider>,
   mountNode

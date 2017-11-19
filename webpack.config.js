@@ -4,7 +4,8 @@ const config = {
   entry: './src/app.jsx',
   output: {
     filename: 'script.js',
-    path: path.resolve(__dirname, 'public')
+    path: path.resolve(__dirname, 'public'),
+    publicPath: '/'
   },
   // using './Main' instead of './Main.jsx'
   resolve: {
@@ -26,7 +27,8 @@ const config = {
     contentBase: path.join(__dirname, "public"),
     compress: true,
     port: 9000,
-    index: 'index.html'
+    index: 'index.html',
+    historyApiFallback: true
   }
 };
 
