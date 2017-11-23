@@ -2,14 +2,14 @@
   "name": "template-app",
   "version": "0.0.1",
   "description": "A default template for creating small web applications.",
-  "main": "public/index.html",
+  "main": "public/index.php",
   "repository": "https://github.com/adderpositive/template-app",
   "author": "Martin Homola",
   "license": "GPL-3.0+",
   "private": false,
   "browserslist": "last 2 versions, ie 10",
   "scripts": {
-    "start": "webpack-dev-server --open --config webpack.dev.js",
+    "start": "webpack-dev-server --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js"
   },
   "dependencies": {

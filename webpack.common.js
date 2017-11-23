@@ -1,7 +1,7 @@
 const path = require('path');
 
 const config = {
-  entry: './src/app.jsx',
+  entry: './src/frontend/app.jsx',
   output: {
     filename: 'script.js',
     path: path.resolve(__dirname, 'public'),

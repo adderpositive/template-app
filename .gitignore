@@ -1,5 +1,6 @@
 yarn-error.log
 node_modules/
 _materials/
+vendor/
 public/*
 !public/index.html
